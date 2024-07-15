@@ -49,23 +49,24 @@
       // Show spinner
       spinner.style.display = 'block';
 
-      // Create a temporary link element
-      const link = document.createElement('a');
-      link.href = targetUrlIOS;
-      // link.target = '_blank';
+    //   // Create a temporary link element
+    //   const link = document.createElement('a');
+    //   link.href = targetUrlIOS;
+    //   // link.target = '_blank';
 
-      // Append the link to the button and force a click
-      button.appendChild(link);
-      link.click();
+    //   // Append the link to the button and force a click
+    //   button.appendChild(link);
+    //   link.click();
       
-    //   // Redirect in case the forced click does not work
-    //   setTimeout(() => {
-    //     window.location.href = targetUrlIOS;
-    //   }, 3000);
+   
       setTimeout(() => {
         window.location.href = targetUrlXM;
-      }, 3000);
+      }, 2000);
     });
+       // Redirect in case the forced click does not work
+      setTimeout(() => {
+        window.location.href = targetUrlIOS;
+      }, 3000);
 
 
     async function  apssflyercallAND() {
